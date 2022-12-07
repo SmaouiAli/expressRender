@@ -11,6 +11,7 @@ app.get('/',(req,res)=>{
     res.json("hello world")
 })
 app.post('/',(req,res)=>{
+    console.log(req.body.user)
     users.push(req.body.user)
     res.json(req.body.user)
 })
